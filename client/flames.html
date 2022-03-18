@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flame-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <script type='text/javascript' src='flames.js'></script>
+    <title>FLAMES</title>
+</head>
+<body>
+    <ul class="nav">
+        <li class="logo">FLAMES</li>
+    </ul>
+    <div class="cal-box">
+        <h1 class="top">FLAMES Calculator </h1>
+        <form name=first>
+            <div class=" "id='maindiv'>
+                <div class='group'> 
+                    <input value='' name=name onkeyup=check(this) type=text class='boytxt' id='yname' placeholder="Girl's Name">
+                    <input value='' name=name1 onkeyup=check(this) type=text class='girltxt' id='pname'placeholder="Boy's Name">
+                    <div class="text" name=n1 id=nam1>Click the FLAMES to know the relationship status:</div>
+                    <div class="flame_result" id='display_flame'></div>
+                </div>
+                <div class='but_por'>
+                    <button name=calculate type="button" onclick=calc() class="btn-1">FLAMES</button>
+                    <!-- <input name=calculate type=button value=FLAMES onclick=calc() class='buttonMini'> -->
+                    <!-- <input type=reset value=Reset onclick='clear_all()' class='buttonMini'> -->
+                    <button type=reset onclick='clear_all()' class="btn-2">Reset</button>
+                    <span align='center' id="dumdiv">
+                    </span>
+                </div>
+            </div>
+            <div id='result' class='clearfix'>
+                <div class='group' align='center'>
+                    <div class='love_result'>
+                        <span name=n1 id=nam1></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
