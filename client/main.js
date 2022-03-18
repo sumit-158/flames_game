@@ -60,5 +60,5 @@ class Poll {
 
 const p = new Poll(
     document.querySelector(".poll"),
-    "Which do you prefer?"
+    "Which age group are you from?"
 );
