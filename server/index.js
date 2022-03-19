@@ -5,6 +5,10 @@ const path = require("path");
 const app = express();
 const dataFile = path.join(__dirname, "data.json");
 
+const staticPath = path.join(__dirname, "../client");
+
+app.use(express.static(staticPath));
+
 // Support POSTing form data with URL encoded
 app.use(express.urlencoded({ extended: true }));
 
